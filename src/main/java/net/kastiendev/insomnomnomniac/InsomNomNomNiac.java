@@ -1,6 +1,8 @@
 package net.kastiendev.insomnomnomniac;
 
 import com.mojang.logging.LogUtils;
+import net.kastiendev.insomnomnomniac.block.ModBlocks;
+import net.kastiendev.insomnomnomniac.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -22,6 +24,9 @@ public class InsomNomNomNiac
     public InsomNomNomNiac()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
