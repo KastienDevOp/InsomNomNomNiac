@@ -1,8 +1,6 @@
 package net.kastiendev.insomnomnomniac.item;
 
-import net.kastiendev.insomnomnomniac.InsomNomNomNiac;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeModeTab {
